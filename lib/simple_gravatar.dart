@@ -63,6 +63,10 @@ class Gravatar {
     return Uri.https('www.gravatar.com', '/$hash.qr').toString();
   }
 
+  String toString() {
+    return imageUrl();
+  }
+
   String _imageString(GravatarImage value) {
     switch (value) {
       case GravatarImage.nf:

@@ -1,3 +1,7 @@
+## 1.0.2
+
+Added CI and readme badges.
+
 ## 1.0.1
 
 Improve scoring and add examples.

@@ -1,3 +1,7 @@
+## 1.0.3
+
+Added custom toString method.
+
 ## 1.0.2
 
 Added CI and readme badges.

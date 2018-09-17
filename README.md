@@ -1,5 +1,8 @@
 # Simple Gravatar
 
+[![Build Status](https://travis-ci.org/subosito/simple_gravatar.svg?branch=master)](https://travis-ci.org/subosito/simple_gravatar)
+[![pub package](https://img.shields.io/pub/v/simple_gravatar.svg)](https://pub.dartlang.org/packages/simple_gravatar)
+
 Gravatar library for Dart 2.
 
 ## Usage

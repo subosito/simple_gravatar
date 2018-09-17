@@ -4,11 +4,11 @@ import 'package:simple_gravatar/simple_gravatar.dart';
 void main() {
   Gravatar gravatar;
 
-  group('imageUrl', () {
-    setUp(() {
-      gravatar = Gravatar('hello@example.com');
-    });
+  setUp(() {
+    gravatar = Gravatar('hello@example.com');
+  });
 
+  group('imageUrl', () {
     test('with no parameter', () {
       expect(
         gravatar.imageUrl(),
@@ -75,5 +75,23 @@ void main() {
         ),
       );
     });
+  });
+
+  test('jsonUrl', () {
+    expect(
+      gravatar.jsonUrl(),
+      equals(
+        'https://www.gravatar.com/cb8419c1d471d55fbca0d63d1fb2b6ac.json',
+      ),
+    );
+  });
+
+  test('qrUrl', () {
+    expect(
+      gravatar.qrUrl(),
+      equals(
+        'https://www.gravatar.com/cb8419c1d471d55fbca0d63d1fb2b6ac.qr',
+      ),
+    );
   });
 }

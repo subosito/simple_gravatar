@@ -16,11 +16,15 @@ void main() {
     fileExtension: true,
   );
 
-  print('Gravatar URL: $url');
+  print('Gravatar URL:      $url');
+  print('Gravatar QR URL:   ${gravatar.qrUrl()}');
+  print('Gravatar JSON URL: ${gravatar.jsonUrl()}');
 
   // OUTPUT
   //
-  // Gravatar URL: https://www.gravatar.com/avatar/cb8419c1d471d55fbca0d63d1fb2b6ac.png?s=100&d=retro&r=pg
+  // Gravatar URL:      https://www.gravatar.com/avatar/cb8419c1d471d55fbca0d63d1fb2b6ac.png?s=100&d=retro&r=pg
+  // Gravatar QR URL:   https://www.gravatar.com/cb8419c1d471d55fbca0d63d1fb2b6ac.qr
+  // Gravatar JSON URL: https://www.gravatar.com/cb8419c1d471d55fbca0d63d1fb2b6ac.json
 }
 ```
 

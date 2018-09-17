@@ -1,0 +1,11 @@
+name: simple_gravatar
+version: 1.0.0
+author: Alif Rachmawadi <arch@subosito.com>
+description: Gravatar library
+homepage: https://github.com/subosito/simple_gravatar
+dependencies:
+  crypto: '>=1.0.0 <3.0.0'
+dev_dependencies:
+  test: '>=1.3.2'
+environment:
+  sdk: '>2.0.0 <3.0.0'

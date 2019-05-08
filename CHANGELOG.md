@@ -1,3 +1,7 @@
+## 1.0.4
+
+Fix md5 hash for utf8 strings
+
 ## 1.0.3
 
 Added custom toString method.

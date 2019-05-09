@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:crypto/crypto.dart';
 
 enum GravatarImage {
@@ -25,10 +27,8 @@ class Gravatar {
   Gravatar(this.email) : this.hash = _generateHash(email);
 
   static String _generateHash(String email) {
-    String preparedEmail = (email.trim()).toLowerCase();
-    Digest digest = (md5.convert(preparedEmail.codeUnits));
-
-    return digest.toString();
+    String preparedEmail = email.trim().toLowerCase();
+    return md5.convert(utf8.encode(preparedEmail)).toString();
   }
 
   String imageUrl({

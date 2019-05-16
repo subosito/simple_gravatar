@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:crypto/crypto.dart';
 
 enum GravatarImage {
@@ -34,8 +33,8 @@ class Gravatar {
   String imageUrl({
     int size,
     GravatarImage defaultImage,
-    bool forceDefault: false,
-    bool fileExtension: false,
+    bool forceDefault = false,
+    bool fileExtension = false,
     GravatarRating rating,
   }) {
     String hashDigest = hash;
@@ -46,10 +45,7 @@ class Gravatar {
     if (forceDefault) query['f'] = 'y';
     if (rating != null) query['r'] = _ratingString(rating);
     if (fileExtension) hashDigest += '.png';
-
-    if (query.length == 0) {
-      query = null;
-    }
+    if (query.isEmpty) query = null;
 
     return Uri.https('www.gravatar.com', '/avatar/$hashDigest', query)
         .toString();

@@ -1,3 +1,7 @@
+## 1.0.5
+
+Improve code based on dartanalyzer reports
+
 ## 1.0.4
 
 Fix md5 hash for utf8 strings

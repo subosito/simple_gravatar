@@ -1,3 +1,7 @@
+## 1.1.0
+
+Migrate to Dart 2.12 with null safety support
+
 ## 1.0.5
 
 Improve code based on dartanalyzer reports

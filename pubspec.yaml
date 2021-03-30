@@ -1,5 +1,5 @@
 name: simple_gravatar
-version: 1.0.5
+version: 1.1.0
 author: Alif Rachmawadi <arch@subosito.com>
 description: A library to generate Gravatar URL in Dart 2 based on gravatar specs.
 homepage: https://github.com/subosito/simple_gravatar

@@ -31,14 +31,14 @@ class Gravatar {
   }
 
   String imageUrl({
-    int size,
-    GravatarImage defaultImage,
+    int? size,
+    GravatarImage? defaultImage,
     bool forceDefault = false,
     bool fileExtension = false,
-    GravatarRating rating,
+    GravatarRating? rating,
   }) {
     String hashDigest = hash;
-    Map<String, String> query = {};
+    Map<String, String>? query = {};
 
     if (size != null) query['s'] = size.toString();
     if (defaultImage != null) query['d'] = _imageString(defaultImage);
@@ -82,8 +82,6 @@ class Gravatar {
       case GravatarImage.blank:
         return 'blank';
     }
-
-    return '';
   }
 
   String _ratingString(GravatarRating value) {
@@ -97,7 +95,5 @@ class Gravatar {
       case GravatarRating.x:
         return 'x';
     }
-
-    return '';
   }
 }

@@ -2,7 +2,7 @@ import 'package:test/test.dart';
 import 'package:simple_gravatar/simple_gravatar.dart';
 
 void main() {
-  Gravatar gravatar;
+  late Gravatar gravatar;
 
   setUp(() {
     gravatar = Gravatar('hello@example.com');
